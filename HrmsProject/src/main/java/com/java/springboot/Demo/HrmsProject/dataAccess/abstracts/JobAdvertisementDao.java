@@ -13,4 +13,5 @@ public interface JobAdvertisementDao extends JpaRepository<JobAdvertisement, Int
 	
 	@Query("From JobAdvertisement ORDER BY releaseDate ASC")
 	List<JobAdvertisement> getByJobAdvertisementOrderByDate();
+	JobAdvertisement getByjobPosition_id(int id);
 }

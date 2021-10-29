@@ -14,4 +14,5 @@ public interface JobAdvertisementService {
 	//DataResult<List<JobAdvertisement>> getAllActiveJobAdvertisement();
 	DataResult<List<JobAdvertisement>> getByisActive(boolean active);
 	DataResult<List<JobAdvertisement>> getByJobAdvertisementOrderByDate();
+	DataResult<JobAdvertisement> getByjobPosition_id(int id);
 }

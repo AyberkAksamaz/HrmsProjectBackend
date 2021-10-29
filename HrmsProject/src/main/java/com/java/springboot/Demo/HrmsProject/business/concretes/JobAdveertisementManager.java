@@ -49,6 +49,12 @@ public class JobAdveertisementManager implements JobAdvertisementService{
 				"Job Advertisement Ordered by Date");
 	}
 
+	@Override
+	public DataResult<JobAdvertisement> getByjobPosition_id(int id) {
+		return new SuccessDataResult<JobAdvertisement>(this.jobAdvertisementDao.getByjobPosition_id(id), 
+				"Job Advertisement listed by job position id.");
+	}
+
 
 
 
